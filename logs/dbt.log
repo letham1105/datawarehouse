@@ -1,0 +1,77 @@
+[0m21:37:06.543752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4cb8c4cd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4cb64b2780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4cb62ae570>]}
+
+
+============================== 21:37:06.555741 | b4cf47b8-1a04-461d-b5e1-84d2de5c2d40 ==============================
+[0m21:37:06.555741 [info ] [MainThread]: Running with dbt=1.10.13
+[0m21:37:06.556239 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'partial_parse': 'True', 'printer_width': '80', 'invocation_command': 'dbt init dbt_project', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/lethitham/.dbt', 'log_path': 'logs', 'warn_error': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'write_json': 'True', 'target_path': 'None', 'use_colors': 'True', 'version_check': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'static_parser': 'True', 'debug': 'False'}
+[0m21:37:06.567933 [info ] [MainThread]: Creating dbt configuration folder at /home/lethitham/.dbt
+[0m21:37:06.569432 [debug] [MainThread]: Starter project path: /home/lethitham/Sale_dw/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:37:06.574076 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:37:06.574720 [info ] [MainThread]: Setting up your profile.
+[0m21:38:46.380781 [info ] [MainThread]: Profile dbt_project written to /home/lethitham/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:38:46.390229 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 99.89616, "process_in_blocks": "1424", "process_kernel_time": 0.131174, "process_mem_max_rss": "102836", "process_out_blocks": "80", "process_user_time": 1.159306}
+[0m21:38:46.390836 [debug] [MainThread]: Command `dbt init` succeeded at 21:38:46.390738 after 99.90 seconds
+[0m21:38:46.391246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4cb5f14560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4cb54814c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4cb560a5d0>]}
+[0m21:38:46.391606 [debug] [MainThread]: Flushing usage events
+[0m21:38:47.582379 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:02:38.526777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777418de55e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77741894cbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777418e80290>]}
+
+
+============================== 22:02:38.529299 | 16714505-2c6d-45e6-9efc-e78746d4c7c5 ==============================
+[0m22:02:38.529299 [info ] [MainThread]: Running with dbt=1.10.13
+[0m22:02:38.529833 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'log_cache_events': 'False', 'target_path': 'None', 'introspect': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'partial_parse': 'True', 'fail_fast': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'profiles_dir': '/home/lethitham/.dbt', 'debug': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'empty': 'False', 'write_json': 'True', 'log_path': 'logs', 'quiet': 'False', 'invocation_command': 'dbt run', 'use_colors': 'True'}
+[0m22:02:38.530285 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/lethitham/Sale_dw/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:02:38.531023 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.046980076, "process_in_blocks": "0", "process_kernel_time": 0.13176, "process_mem_max_rss": "97900", "process_out_blocks": "16", "process_user_time": 0.979221}
+[0m22:02:38.531394 [debug] [MainThread]: Command `dbt run` failed at 22:02:38.531319 after 0.05 seconds
+[0m22:02:38.531678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77741af62c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77741c7b3aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77741ae4a1b0>]}
+[0m22:02:38.531994 [debug] [MainThread]: Flushing usage events
+[0m22:02:39.803882 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:47:37.255838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b81e429f710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b81e3a03fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b81e5dc69f0>]}
+
+
+============================== 22:47:37.266531 | 03d87a71-534c-46a1-9740-87510bee823e ==============================
+[0m22:47:37.266531 [info ] [MainThread]: Running with dbt=1.10.13
+[0m22:47:37.267325 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'empty': 'None', 'target_path': 'None', 'use_colors': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lethitham/.dbt', 'static_parser': 'True', 'quiet': 'False', 'debug': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'version_check': 'True', 'invocation_command': 'dbt init retail_dw_project'}
+[0m22:47:37.274553 [debug] [MainThread]: Starter project path: /home/lethitham/Sale_dw/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m22:47:37.277742 [info ] [MainThread]: 
+Your new dbt project "retail_dw_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m22:47:37.278231 [info ] [MainThread]: Setting up your profile.
+[0m22:49:28.990884 [info ] [MainThread]: Profile retail_dw_project written to /home/lethitham/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:49:28.992393 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 111.77964, "process_in_blocks": "352", "process_kernel_time": 0.147873, "process_mem_max_rss": "103360", "process_out_blocks": "80", "process_user_time": 1.0346}
+[0m22:49:28.993119 [debug] [MainThread]: Command `dbt init` succeeded at 22:49:28.992994 after 111.78 seconds
+[0m22:49:28.993584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b81e7fbba70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b81e34a58b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b81e3e14ce0>]}
+[0m22:49:28.994088 [debug] [MainThread]: Flushing usage events
+[0m22:49:30.278666 [debug] [MainThread]: An error was encountered while trying to flush usage events
