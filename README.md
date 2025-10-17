@@ -50,7 +50,7 @@ python scripts/preview_clean_data.py
 # step 7 
 - load vào postgrest 
 - run command:
-- 
+  
 ```sh
 python scripts/load.py
 ```
