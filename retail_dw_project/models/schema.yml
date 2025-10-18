@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fact_sales
+    description: "Fact table lưu thông tin đơn hàng"
+    tests:
+      - not_null:
+          column_name: invoice_no
+      - not_null:
+          column_name: customer_id
+      - unique:
+          column_name: invoice_no

@@ -1,0 +1,37 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: retail_dw
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  metabase:
+    image: metabase/metabase
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_HOST: db
+      MB_DB_PORT: 5432
+      MB_DB_USER: postgres
+      MB_DB_PASS: 123456
+      MB_DB_DBNAME: retail_dw
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
+# 
+# Note: To start the services, run `docker-compose -f docker-compose-metabase.yml up -d`
+# Access Metabase at http://localhost:3000
+# Default Metabase login:
+# Email:
+#   -
+# Password:
+#   -

@@ -6,7 +6,7 @@ name: 'retail_dw_project'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'retail_dw_project'
+profile: 'dbt_project'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
