@@ -2,11 +2,56 @@ version: 2
 
 models:
   - name: fact_sales
-    description: "Fact table lưu thông tin đơn hàng"
-    tests:
-      - not_null:
-          column_name: invoice_no
-      - not_null:
-          column_name: customer_id
-      - unique:
-          column_name: invoice_no
+    description: "Fact table lưu thông tin đơn hàng với full dimensional model"
+    columns:
+      - name: sales_key
+        description: "Surrogate key cho fact record"
+        tests:
+          - not_null
+      - name: invoice_no
+        description: "Số hóa đơn"
+        tests:
+          - not_null
+      - name: customer_key
+        description: "Foreign key đến dim_customer"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_key
+      - name: product_key
+        description: "Foreign key đến dim_product"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_product')
+              field: product_key
+      - name: date_id
+        description: "Foreign key đến dim_date"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_id
+      - name: quantity
+        description: "Số lượng"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 1
+      - name: unit_price
+        description: "Đơn giá"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: line_total
+        description: "Tổng tiền dòng"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+      - name: order_datetime
+        description: "Ngày giờ đặt hàng"
+        tests:
+          - not_null
