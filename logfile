@@ -1,0 +1,5 @@
+2025-10-20 18:02:34.725 +07 [14497] LOG:  starting PostgreSQL 17.6 on x86_64-pc-linux-gnu, compiled by clang version 19.1.7, 64-bit
+2025-10-20 18:02:34.725 +07 [14497] LOG:  listening on IPv6 address "::1", port 5432
+2025-10-20 18:02:34.725 +07 [14497] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2025-10-20 18:02:34.726 +07 [14497] FATAL:  could not create lock file "/run/postgresql/.s.PGSQL.5432.lock": No such file or directory
+2025-10-20 18:02:34.728 +07 [14497] LOG:  database system is shut down
