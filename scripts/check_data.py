@@ -25,6 +25,20 @@ print(f"\nSố dòng trùng lặp: {duplicates}")
 print("\nKiểu dữ liệu của các cột:")
 print(df.dtypes)
 
+
+print("\nĐổi kiểu dữ liệu")
+
+df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
+df['Invoice'] = df['Invoice'].astype('string')
+df['StockCode'] = df['StockCode'].astype('string')
+df['Description'] = df['Description'].astype('string')
+df['Country'] = df['Country'].astype('category')
+
+# --- Kiểm tra lại kết quả ---
+print("\nKiểu dữ liệu sau khi chuyển đổi:")
+print(df.dtypes)
+
+
 # 6. Kiểm tra dữ liệu bất thường
 if "Quantity" in df.columns:
     negative_qty = df[df["Quantity"] < 0]
@@ -43,16 +57,14 @@ df.drop_duplicates(inplace=True)
 if "Description" in df.columns:
     df["Description"] = df["Description"].fillna("Unknown Product")
 
+# if "Customer ID" in df.columns:
+#     df["Customer ID"] = df["Customer ID"].fillna(-1).astype(int)
 if "Customer ID" in df.columns:
-    df["Customer ID"] = df["Customer ID"].fillna(-1).astype(int)
+    df = df.dropna(subset=["Customer ID"])
 
 # 9. Loại bỏ giá trị Price <= 0
 if "Price" in df.columns:
     df = df[df["Price"] > 0]
-
-# 10. Chuyển kiểu dữ liệu
-if "InvoiceDate" in df.columns:
-    df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"], errors="coerce")
 
 # 11. Tách dữ liệu trả hàng (Quantity âm)
 returns_df = pd.DataFrame()
