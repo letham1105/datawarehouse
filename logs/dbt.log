@@ -1083,3 +1083,67 @@ Runtime Error
 [0m01:10:27.276622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9e47910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9e47710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9defe90>]}
 [0m01:10:27.277288 [debug] [MainThread]: Flushing usage events
 [0m01:10:28.532428 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:21.908662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e647b140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e52fd100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e53233b0>]}
+
+
+============================== 18:55:21.912298 | 93da78f8-a7aa-4021-b76d-62046c365d4e ==============================
+[0m18:55:21.912298 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:21.912879 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:21.913463 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:21.914409 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05307942, "process_in_blocks": "66560", "process_kernel_time": 0.190334, "process_mem_max_rss": "102680", "process_out_blocks": "16", "process_user_time": 1.250409}
+[0m18:55:21.914898 [debug] [MainThread]: Command `dbt run` failed at 18:55:21.914815 after 0.05 seconds
+[0m18:55:21.915326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e55db260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e52e15b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e5074a40>]}
+[0m18:55:21.915811 [debug] [MainThread]: Flushing usage events
+[0m18:55:23.590853 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:25.380772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d97a0aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d9703dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d91c33b0>]}
+
+
+============================== 18:55:25.385070 | 3b3e7f99-2830-48f7-abdf-c31a606cd078 ==============================
+[0m18:55:25.385070 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:25.385951 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt test', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:25.386720 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:25.388016 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.063633524, "process_in_blocks": "0", "process_kernel_time": 0.157287, "process_mem_max_rss": "102604", "process_out_blocks": "0", "process_user_time": 1.388926}
+[0m18:55:25.388692 [debug] [MainThread]: Command `dbt test` failed at 18:55:25.388573 after 0.06 seconds
+[0m18:55:25.389256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d972a0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d8c84e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d91a9fa0>]}
+[0m18:55:25.389824 [debug] [MainThread]: Flushing usage events
+[0m18:55:26.704133 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:28.559196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7065e80860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7067e20680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70656733b0>]}
+
+
+============================== 18:55:28.563259 | 8d56f459-5ea1-48c9-8cec-c8abd8cc9862 ==============================
+[0m18:55:28.563259 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:28.564034 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt docs generate', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:28.565044 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:28.566307 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.059243973, "process_in_blocks": "0", "process_kernel_time": 0.166861, "process_mem_max_rss": "102564", "process_out_blocks": "0", "process_user_time": 1.415879}
+[0m18:55:28.566951 [debug] [MainThread]: Command `dbt docs generate` failed at 18:55:28.566850 after 0.06 seconds
+[0m18:55:28.567479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7066217050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7065d4b7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f706531e9c0>]}
+[0m18:55:28.568222 [debug] [MainThread]: Flushing usage events
+[0m18:55:29.902520 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:31.450689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f075265a660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0754756ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0751d84080>]}
+
+
+============================== 18:55:31.453886 | f191d6d4-084e-44be-92a6-6305d1d5b9c6 ==============================
+[0m18:55:31.453886 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:31.454490 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt docs serve', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:31.455092 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:31.456064 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.052947514, "process_in_blocks": "0", "process_kernel_time": 0.146558, "process_mem_max_rss": "102668", "process_out_blocks": "8", "process_user_time": 1.206934}
+[0m18:55:31.456598 [debug] [MainThread]: Command `dbt docs serve` failed at 18:55:31.456511 after 0.05 seconds
+[0m18:55:31.457133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f07527de660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f07524b1e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f07520c3d10>]}
+[0m18:55:31.457606 [debug] [MainThread]: Flushing usage events
+[0m18:55:32.863014 [debug] [MainThread]: An error was encountered while trying to flush usage events
