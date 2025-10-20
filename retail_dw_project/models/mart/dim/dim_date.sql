@@ -1,7 +1,6 @@
 {{ config(materialized='table') }}
 
 with date_range as (
-    -- Lấy range thực tế từ dữ liệu + buffer
     select 
         (select min("InvoiceDate"::date) from {{ ref('stg_orders') }}) - interval '1 year' as start_date,
         (select max("InvoiceDate"::date) from {{ ref('stg_orders') }}) + interval '2 years' as end_date
@@ -23,9 +22,16 @@ select
     extract(day from date) as day,
     extract(dow from date) as day_of_week,
     extract(quarter from date) as quarter,
-    -- Thêm các thông tin hữu ích khác
-    to_char(date, 'Month') as month_name,
-    to_char(date, 'Day') as day_name,
+
+    extract(week from date) as week_of_year,
+    extract(isodow from date) as day_of_week_iso,
+
+    trim(to_char(date, 'Month')) as month_name,
+    trim(to_char(date, 'Mon')) as month_name_short,
+    trim(to_char(date, 'Day')) as day_name,
+    trim(to_char(date, 'Dy')) as day_name_short,
+    to_char(date, 'YYYY-MM') as year_month,
+
     case 
         when extract(dow from date) in (0, 6) then true 
         else false 
@@ -36,10 +42,5 @@ select
         when extract(month from date) in (6, 7, 8) then 'Summer'
         else 'Autumn'
     end as season,
-    -- Fiscal year (assuming April-March)
-    case 
-        when extract(month from date) >= 4 then extract(year from date)
-        else extract(year from date) - 1
-    end as fiscal_year,
     current_timestamp as created_at
 from dates

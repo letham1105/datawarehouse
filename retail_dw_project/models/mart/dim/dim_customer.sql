@@ -33,13 +33,13 @@ select
     active_period_days,
     avg_order_value,
     avg_items_per_order,
-    case 
+    case
         when total_revenue >= 1000 then 'VIP'
         when total_revenue >= 500 then 'Premium'
         when total_revenue >= 100 then 'Regular'
         else 'Basic'
     end as customer_segment,
-    case 
+    case
         when total_orders >= 10 and total_revenue >= 500 then 'High Value'
         when total_orders >= 5 and total_revenue >= 200 then 'Medium Value'
         when total_orders >= 2 then 'Regular'
