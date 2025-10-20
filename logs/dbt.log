@@ -229,3 +229,921 @@ Runtime Error
 [0m01:20:59.516411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74e89ffec320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74e89e9e4c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74e89e1d0530>]}
 [0m01:20:59.516714 [debug] [MainThread]: Flushing usage events
 [0m01:21:00.774359 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:33:58.635171 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb898c3ead0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb896fb91d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8994d5890>]}
+
+
+============================== 19:33:58.639250 | 86af5365-9029-4206-8658-0bc647eb8c66 ==============================
+[0m19:33:58.639250 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:33:58.639742 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'log_format': 'default', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'empty': 'None', 'debug': 'False', 'introspect': 'True', 'printer_width': '80', 'quiet': 'False', 'no_print': 'None', 'static_parser': 'True', 'profiles_dir': '/home/anryenyn/.dbt', 'log_path': 'logs'}
+[0m19:33:58.653260 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:33:58.653904 [info ] [MainThread]: python version: 3.11.9
+[0m19:33:58.654385 [info ] [MainThread]: python path: /home/anryenyn/Desktop/VKU/datawarehouse/.venv/bin/python
+[0m19:33:58.654933 [info ] [MainThread]: os info: Linux-6.12.48-1-MANJARO-x86_64-with-glibc2.42
+[0m19:33:58.702409 [info ] [MainThread]: Using profiles dir at /home/anryenyn/.dbt
+[0m19:33:58.702853 [info ] [MainThread]: Using profiles.yml file at /home/anryenyn/.dbt/profiles.yml
+[0m19:33:58.703124 [info ] [MainThread]: Using dbt_project.yml file at /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+[0m19:33:58.703379 [info ] [MainThread]: Configuration:
+[0m19:33:58.703612 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:33:58.703854 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:33:58.704079 [info ] [MainThread]: Required dependencies:
+[0m19:33:58.704324 [debug] [MainThread]: Executing "git --help"
+[0m19:33:58.706596 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:33:58.707447 [debug] [MainThread]: STDERR: "b''"
+[0m19:33:58.708025 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:33:58.708629 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:33:58.709323 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:33:58.710005 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_project", target "dev" invalid: None is not of type 'string'
+
+Runtime Error
+  Credentials in profile "retail_dw_project", target "dev" invalid: None is not of type 'string'
+
+
+[0m19:33:58.710609 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml> not found
+
+[0m19:33:58.712864 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.11960581, "process_in_blocks": "1544", "process_kernel_time": 0.096641, "process_mem_max_rss": "110916", "process_out_blocks": "24", "process_user_time": 1.062012}
+[0m19:33:58.713801 [debug] [MainThread]: Command `dbt debug` failed at 19:33:58.713637 after 0.12 seconds
+[0m19:33:58.714546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb896d97dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb89b4b6090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb896f05890>]}
+[0m19:33:58.715388 [debug] [MainThread]: Flushing usage events
+[0m19:34:00.338523 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:46:19.665052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47e44ff690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47e44f2a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47e4553b10>]}
+
+
+============================== 19:46:19.669701 | e9925f35-f65d-4a28-91cc-d35ee53a673c ==============================
+[0m19:46:19.669701 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:46:19.670637 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/anryenyn/.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'version_check': 'True', 'static_parser': 'True', 'use_colors': 'True', 'warn_error': 'None', 'printer_width': '80', 'log_format': 'default', 'target_path': 'None', 'log_path': 'logs', 'log_cache_events': 'False', 'introspect': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'cache_selected_only': 'False', 'no_print': 'None'}
+[0m19:46:19.681053 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:46:19.681556 [info ] [MainThread]: python version: 3.11.9
+[0m19:46:19.681940 [info ] [MainThread]: python path: /home/anryenyn/Desktop/VKU/datawarehouse/.venv/bin/python
+[0m19:46:19.682276 [info ] [MainThread]: os info: Linux-6.12.48-1-MANJARO-x86_64-with-glibc2.42
+[0m19:46:19.725085 [info ] [MainThread]: Using profiles dir at /home/anryenyn/.dbt
+[0m19:46:19.725579 [info ] [MainThread]: Using profiles.yml file at /home/anryenyn/.dbt/profiles.yml
+[0m19:46:19.725839 [info ] [MainThread]: Using dbt_project.yml file at /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+[0m19:46:19.726240 [info ] [MainThread]: adapter type: postgres
+[0m19:46:19.726491 [info ] [MainThread]: adapter version: 1.9.1
+[0m19:46:19.726753 [info ] [MainThread]: Configuration:
+[0m19:46:19.727000 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:46:19.727226 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:46:19.727447 [info ] [MainThread]: Required dependencies:
+[0m19:46:19.727689 [debug] [MainThread]: Executing "git --help"
+[0m19:46:19.729671 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:46:19.730107 [debug] [MainThread]: STDERR: "b''"
+[0m19:46:19.730353 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:46:19.730609 [info ] [MainThread]: Connection:
+[0m19:46:19.730853 [info ] [MainThread]:   host: localhost
+[0m19:46:19.731087 [info ] [MainThread]:   port: 5432
+[0m19:46:19.731319 [info ] [MainThread]:   user: postgres
+[0m19:46:19.731551 [info ] [MainThread]:   database: retail_dw
+[0m19:46:19.731790 [info ] [MainThread]:   schema: public
+[0m19:46:19.732018 [info ] [MainThread]:   connect_timeout: 10
+[0m19:46:19.732239 [info ] [MainThread]:   role: None
+[0m19:46:19.732464 [info ] [MainThread]:   search_path: None
+[0m19:46:19.732702 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:46:19.732962 [info ] [MainThread]:   sslmode: None
+[0m19:46:19.733200 [info ] [MainThread]:   sslcert: None
+[0m19:46:19.733410 [info ] [MainThread]:   sslkey: None
+[0m19:46:19.733620 [info ] [MainThread]:   sslrootcert: None
+[0m19:46:19.733835 [info ] [MainThread]:   application_name: dbt
+[0m19:46:19.734076 [info ] [MainThread]:   retries: 1
+[0m19:46:19.734406 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:46:19.781756 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:46:19.799433 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:46:19.799845 [debug] [MainThread]: On debug: select 1 as id
+[0m19:46:19.800109 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:46:19.817043 [debug] [MainThread]: SQL status: SELECT 1 in 0.017 seconds
+[0m19:46:19.817971 [debug] [MainThread]: On debug: Close
+[0m19:46:19.818332 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:46:19.818654 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:46:19.818909 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml> not found
+
+[0m19:46:19.819648 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.19667788, "process_in_blocks": "8328", "process_kernel_time": 0.092727, "process_mem_max_rss": "121292", "process_out_blocks": "24", "process_user_time": 1.09626}
+[0m19:46:19.820136 [debug] [MainThread]: Command `dbt debug` failed at 19:46:19.820051 after 0.20 seconds
+[0m19:46:19.820457 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:46:19.820751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47e44f1dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47e4553a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f47e8bb5d10>]}
+[0m19:46:19.821105 [debug] [MainThread]: Flushing usage events
+[0m19:46:21.602924 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:48:29.934603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf54467350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf54637510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf54614510>]}
+
+
+============================== 19:48:29.939166 | d2d3ef38-ac26-4fe5-813c-a9ddde262246 ==============================
+[0m19:48:29.939166 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:48:29.940100 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'quiet': 'False', 'debug': 'False', 'printer_width': '80', 'version_check': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'no_print': 'None', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'profiles_dir': '/home/anryenyn/.dbt', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'cache_selected_only': 'False'}
+[0m19:48:29.949066 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:48:29.949578 [info ] [MainThread]: python version: 3.11.9
+[0m19:48:29.949920 [info ] [MainThread]: python path: /home/anryenyn/Desktop/VKU/datawarehouse/.venv/bin/python
+[0m19:48:29.950229 [info ] [MainThread]: os info: Linux-6.12.48-1-MANJARO-x86_64-with-glibc2.42
+[0m19:48:29.953213 [info ] [MainThread]: Using profiles dir at /home/anryenyn/.dbt
+[0m19:48:29.953616 [info ] [MainThread]: Using profiles.yml file at /home/anryenyn/.dbt/profiles.yml
+[0m19:48:29.953875 [info ] [MainThread]: Using dbt_project.yml file at /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+[0m19:48:30.036134 [info ] [MainThread]: Configuration:
+[0m19:48:30.036728 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:48:30.037010 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:48:30.037258 [info ] [MainThread]: Required dependencies:
+[0m19:48:30.037518 [debug] [MainThread]: Executing "git --help"
+[0m19:48:30.039371 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:48:30.039713 [debug] [MainThread]: STDERR: "b''"
+[0m19:48:30.039941 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:48:30.040174 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:48:30.040414 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:48:30.040648 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'dbt_project'
+
+
+[0m19:48:30.041304 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.14968659, "process_in_blocks": "0", "process_kernel_time": 0.082971, "process_mem_max_rss": "107940", "process_out_blocks": "16", "process_user_time": 1.062198}
+[0m19:48:30.041723 [debug] [MainThread]: Command `dbt debug` failed at 19:48:30.041655 after 0.15 seconds
+[0m19:48:30.042029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf58b17290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf555a0750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdf58bb5d10>]}
+[0m19:48:30.042351 [debug] [MainThread]: Flushing usage events
+[0m19:48:31.849250 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:50:34.339354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb995ff9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb9965f510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb9960b650>]}
+
+
+============================== 19:50:34.342316 | 22eced97-3882-4469-8e48-e5bc95fb8afd ==============================
+[0m19:50:34.342316 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:50:34.342858 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'profiles_dir': '/home/anryenyn/.dbt', 'debug': 'False', 'cache_selected_only': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'quiet': 'False', 'log_format': 'default', 'printer_width': '80', 'use_experimental_parser': 'False', 'no_print': 'None'}
+[0m19:50:34.349001 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:50:34.349500 [info ] [MainThread]: python version: 3.11.9
+[0m19:50:34.349819 [info ] [MainThread]: python path: /home/anryenyn/Desktop/VKU/datawarehouse/.venv/bin/python
+[0m19:50:34.350091 [info ] [MainThread]: os info: Linux-6.12.48-1-MANJARO-x86_64-with-glibc2.42
+[0m19:50:34.352360 [info ] [MainThread]: Using profiles dir at /home/anryenyn/.dbt
+[0m19:50:34.352746 [info ] [MainThread]: Using profiles.yml file at /home/anryenyn/.dbt/profiles.yml
+[0m19:50:34.353031 [info ] [MainThread]: Using dbt_project.yml file at /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+[0m19:50:34.442260 [info ] [MainThread]: Configuration:
+[0m19:50:34.442730 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:50:34.443010 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:50:34.443246 [info ] [MainThread]: Required dependencies:
+[0m19:50:34.443496 [debug] [MainThread]: Executing "git --help"
+[0m19:50:34.445628 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:50:34.446199 [debug] [MainThread]: STDERR: "b''"
+[0m19:50:34.446449 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:50:34.446688 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:50:34.446926 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:50:34.447161 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'dbt_project'
+
+
+[0m19:50:34.447933 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.15373577, "process_in_blocks": "0", "process_kernel_time": 0.112706, "process_mem_max_rss": "107876", "process_out_blocks": "24", "process_user_time": 1.096923}
+[0m19:50:34.448347 [debug] [MainThread]: Command `dbt debug` failed at 19:50:34.448273 after 0.15 seconds
+[0m19:50:34.448675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb9dcb5e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb9dcb6090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb99469150>]}
+[0m19:50:34.449058 [debug] [MainThread]: Flushing usage events
+[0m19:50:36.254006 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:55:35.246108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f0a00aad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f0a09e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f0bdb51d0>]}
+
+
+============================== 19:55:35.248597 | f1fbcf1f-5a4c-49e6-927a-8b7eda1bcf3a ==============================
+[0m19:55:35.248597 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:55:35.249057 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'empty': 'None', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'log_format': 'default', 'printer_width': '80', 'partial_parse': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'quiet': 'False', 'target_path': 'None'}
+[0m19:55:35.254722 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:55:35.255129 [info ] [MainThread]: python version: 3.11.9
+[0m19:55:35.255413 [info ] [MainThread]: python path: /home/anryenyn/Desktop/VKU/datawarehouse/.venv/bin/python
+[0m19:55:35.255659 [info ] [MainThread]: os info: Linux-6.12.48-1-MANJARO-x86_64-with-glibc2.42
+[0m19:55:35.292850 [info ] [MainThread]: Using profiles dir at /home/anryenyn/.dbt
+[0m19:55:35.293340 [info ] [MainThread]: Using profiles.yml file at /home/anryenyn/.dbt/profiles.yml
+[0m19:55:35.293617 [info ] [MainThread]: Using dbt_project.yml file at /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+[0m19:55:35.293997 [info ] [MainThread]: adapter type: postgres
+[0m19:55:35.294253 [info ] [MainThread]: adapter version: 1.9.1
+[0m19:55:35.375608 [info ] [MainThread]: Configuration:
+[0m19:55:35.376033 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:55:35.376299 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:55:35.376537 [info ] [MainThread]: Required dependencies:
+[0m19:55:35.376784 [debug] [MainThread]: Executing "git --help"
+[0m19:55:35.378772 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:55:35.379630 [debug] [MainThread]: STDERR: "b''"
+[0m19:55:35.380231 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:55:35.380859 [info ] [MainThread]: Connection:
+[0m19:55:35.381495 [info ] [MainThread]:   host: localhost
+[0m19:55:35.382122 [info ] [MainThread]:   port: 5432
+[0m19:55:35.382782 [info ] [MainThread]:   user: postgres
+[0m19:55:35.383436 [info ] [MainThread]:   database: retail_dw
+[0m19:55:35.384038 [info ] [MainThread]:   schema: public
+[0m19:55:35.384600 [info ] [MainThread]:   connect_timeout: 10
+[0m19:55:35.385148 [info ] [MainThread]:   role: None
+[0m19:55:35.385694 [info ] [MainThread]:   search_path: None
+[0m19:55:35.386281 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:55:35.386828 [info ] [MainThread]:   sslmode: None
+[0m19:55:35.387401 [info ] [MainThread]:   sslcert: None
+[0m19:55:35.387942 [info ] [MainThread]:   sslkey: None
+[0m19:55:35.388497 [info ] [MainThread]:   sslrootcert: None
+[0m19:55:35.389021 [info ] [MainThread]:   application_name: dbt
+[0m19:55:35.389575 [info ] [MainThread]:   retries: 1
+[0m19:55:35.389987 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:55:35.435569 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:55:35.450390 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:55:35.450765 [debug] [MainThread]: On debug: select 1 as id
+[0m19:55:35.451025 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:55:35.461223 [debug] [MainThread]: SQL status: SELECT 1 in 0.010 seconds
+[0m19:55:35.462136 [debug] [MainThread]: On debug: Close
+[0m19:55:35.462486 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:55:35.462827 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:55:35.463549 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.26395404, "process_in_blocks": "0", "process_kernel_time": 0.110072, "process_mem_max_rss": "123012", "process_out_blocks": "24", "process_user_time": 1.181107}
+[0m19:55:35.463965 [debug] [MainThread]: Command `dbt debug` succeeded at 19:55:35.463892 after 0.26 seconds
+[0m19:55:35.464252 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:55:35.464542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f09e63250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f0e617290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5f08d1cf50>]}
+[0m19:55:35.464878 [debug] [MainThread]: Flushing usage events
+[0m19:55:37.123886 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:56:48.246619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b09e0e250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b09e3bb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b09e03290>]}
+
+
+============================== 19:56:48.250731 | 05dd0932-d4f2-489a-9323-6ce3e190ca48 ==============================
+[0m19:56:48.250731 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:56:48.251232 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'write_json': 'True', 'debug': 'False', 'version_check': 'True', 'log_format': 'default', 'warn_error': 'None', 'empty': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'introspect': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'printer_width': '80', 'quiet': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'use_colors': 'True', 'log_cache_events': 'False'}
+[0m19:56:48.417221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '05dd0932-d4f2-489a-9323-6ce3e190ca48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b08f20b50>]}
+[0m19:56:48.464500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '05dd0932-d4f2-489a-9323-6ce3e190ca48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0ca04950>]}
+[0m19:56:48.465401 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:56:48.516077 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:56:48.516689 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:56:48.517029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '05dd0932-d4f2-489a-9323-6ce3e190ca48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b08b6b250>]}
+[0m19:56:49.026356 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m19:56:49.029959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '05dd0932-d4f2-489a-9323-6ce3e190ca48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b093d81d0>]}
+[0m19:56:49.057031 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:56:49.058571 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:56:49.069339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05dd0932-d4f2-489a-9323-6ce3e190ca48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b08785310>]}
+[0m19:56:49.069854 [info ] [MainThread]: Found 447 macros
+[0m19:56:49.070173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05dd0932-d4f2-489a-9323-6ce3e190ca48', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0c5a87d0>]}
+[0m19:56:49.071249 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:56:49.071746 [debug] [MainThread]: Command end result
+[0m19:56:49.083438 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:56:49.084877 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:56:49.087440 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m19:56:49.088231 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.88604325, "process_in_blocks": "1992", "process_kernel_time": 0.119725, "process_mem_max_rss": "117928", "process_out_blocks": "2576", "process_user_time": 1.769357}
+[0m19:56:49.088640 [debug] [MainThread]: Command `dbt run` succeeded at 19:56:49.088568 after 0.89 seconds
+[0m19:56:49.088969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b0e417290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b09e032d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b09fb2490>]}
+[0m19:56:49.089315 [debug] [MainThread]: Flushing usage events
+[0m19:56:50.788904 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:56:52.019950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7ef2fb410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7ef2fb910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7ef2a8290>]}
+
+
+============================== 19:56:52.023718 | a7f11f4a-95fe-433c-8ce3-8b8bae06edb3 ==============================
+[0m19:56:52.023718 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:56:52.024168 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'write_json': 'True', 'invocation_command': 'dbt test', 'warn_error': 'None', 'version_check': 'True', 'printer_width': '80', 'log_format': 'default', 'debug': 'False', 'no_print': 'None', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'introspect': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'profiles_dir': '/home/anryenyn/.dbt', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False'}
+[0m19:56:52.145630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a7f11f4a-95fe-433c-8ce3-8b8bae06edb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7ef2fb110>]}
+[0m19:56:52.193986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a7f11f4a-95fe-433c-8ce3-8b8bae06edb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7f1e801d0>]}
+[0m19:56:52.194862 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:56:52.244315 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:56:52.282041 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:56:52.282407 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:56:52.282849 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m19:56:52.286431 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a7f11f4a-95fe-433c-8ce3-8b8bae06edb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7edf57190>]}
+[0m19:56:52.315492 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:56:52.316893 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:56:52.332561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a7f11f4a-95fe-433c-8ce3-8b8bae06edb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7ee3fbe50>]}
+[0m19:56:52.333008 [info ] [MainThread]: Found 447 macros
+[0m19:56:52.333297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7f11f4a-95fe-433c-8ce3-8b8bae06edb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7ee3a48d0>]}
+[0m19:56:52.334237 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:56:52.335636 [debug] [MainThread]: Command end result
+[0m19:56:52.347003 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:56:52.348337 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:56:52.350816 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m19:56:52.351566 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.3737229, "process_in_blocks": "1224", "process_kernel_time": 0.09638, "process_mem_max_rss": "119712", "process_out_blocks": "1712", "process_user_time": 1.249837}
+[0m19:56:52.351968 [debug] [MainThread]: Command `dbt test` succeeded at 19:56:52.351894 after 0.37 seconds
+[0m19:56:52.352294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7f1034510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7f3817290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7ef43b190>]}
+[0m19:56:52.352618 [debug] [MainThread]: Flushing usage events
+[0m19:56:54.091246 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:56:55.345662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a74825c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a756ad650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a757319d0>]}
+
+
+============================== 19:56:55.348336 | 03c8ece2-a534-4616-85e3-40aceea6b3be ==============================
+[0m19:56:55.348336 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:56:55.348783 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'printer_width': '80', 'partial_parse': 'True', 'version_check': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'use_colors': 'True', 'debug': 'False', 'static_parser': 'True', 'target_path': 'None', 'fail_fast': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'cache_selected_only': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt docs generate', 'empty': 'None', 'warn_error': 'None', 'profiles_dir': '/home/anryenyn/.dbt', 'no_print': 'None'}
+[0m19:56:55.470103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '03c8ece2-a534-4616-85e3-40aceea6b3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a73d9da50>]}
+[0m19:56:55.517859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '03c8ece2-a534-4616-85e3-40aceea6b3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a7745df50>]}
+[0m19:56:55.518521 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:56:55.567249 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:56:55.604772 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:56:55.605143 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:56:55.605574 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m19:56:55.609167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '03c8ece2-a534-4616-85e3-40aceea6b3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a731d8890>]}
+[0m19:56:55.618902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '03c8ece2-a534-4616-85e3-40aceea6b3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a7480f9d0>]}
+[0m19:56:55.619436 [info ] [MainThread]: Found 447 macros
+[0m19:56:55.619743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '03c8ece2-a534-4616-85e3-40aceea6b3be', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a73985350>]}
+[0m19:56:55.620765 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:56:55.622254 [debug] [MainThread]: Command end result
+[0m19:56:55.651339 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:56:55.652805 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:56:55.655279 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m19:56:55.656590 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m19:56:55.656874 [info ] [MainThread]: Building catalog
+[0m19:56:55.673549 [debug] [MainThread]: Wrote artifact CatalogArtifact to /home/anryenyn/Desktop/VKU/datawarehouse/target/catalog.json
+[0m19:56:55.684938 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:56:55.686244 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:56:55.686563 [info ] [MainThread]: Catalog written to /home/anryenyn/Desktop/VKU/datawarehouse/target/catalog.json
+[0m19:56:55.687248 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.3834576, "process_in_blocks": "56", "process_kernel_time": 0.10167, "process_mem_max_rss": "122048", "process_out_blocks": "5080", "process_user_time": 1.26735}
+[0m19:56:55.687676 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:56:55.687605 after 0.38 seconds
+[0m19:56:55.687951 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:56:55.688224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a74697a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a74697690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2a746976d0>]}
+[0m19:56:55.688532 [debug] [MainThread]: Flushing usage events
+[0m19:56:57.202667 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:56:58.529416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a858ce0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a85a5e790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a858ba350>]}
+
+
+============================== 19:56:58.531877 | 83218f3f-67ad-498a-867a-ad7af2276f9f ==============================
+[0m19:56:58.531877 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:56:58.532335 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'no_print': 'None', 'fail_fast': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'empty': 'None', 'use_colors': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs serve', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'printer_width': '80', 'profiles_dir': '/home/anryenyn/.dbt', 'debug': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True'}
+[0m19:56:58.654768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '83218f3f-67ad-498a-867a-ad7af2276f9f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a854fdf50>]}
+[0m19:56:58.703765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '83218f3f-67ad-498a-867a-ad7af2276f9f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a884c0110>]}
+[0m19:57:44.526964 [error] [MainThread]: Encountered an error:
+
+[0m19:57:44.533052 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/anryenyn/Desktop/VKU/datawarehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anryenyn/Desktop/VKU/datawarehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anryenyn/Desktop/VKU/datawarehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 272, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anryenyn/Desktop/VKU/datawarehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 303, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anryenyn/Desktop/VKU/datawarehouse/.venv/lib/python3.11/site-packages/dbt/cli/requires.py", line 350, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anryenyn/Desktop/VKU/datawarehouse/.venv/lib/python3.11/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/anryenyn/Desktop/VKU/datawarehouse/.venv/lib/python3.11/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/home/anryenyn/.pyenv/versions/3.11.9/lib/python3.11/socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anryenyn/.pyenv/versions/3.11.9/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m19:57:44.534178 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 46.046196, "process_in_blocks": "304", "process_kernel_time": 0.079297, "process_mem_max_rss": "114564", "process_out_blocks": "3360", "process_user_time": 1.17731}
+[0m19:57:44.534764 [debug] [MainThread]: Command `dbt docs serve` failed at 19:57:44.534659 after 46.05 seconds
+[0m19:57:44.535759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a858c7c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a858c4950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4a8555b450>]}
+[0m19:57:44.536709 [debug] [MainThread]: Flushing usage events
+[0m19:57:46.162187 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:57:57.606467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997e6de9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997c97b450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997bb573d0>]}
+
+
+============================== 19:57:57.610379 | 89708a87-9a0a-494b-9cbb-51d079879951 ==============================
+[0m19:57:57.610379 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:57:57.610827 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'introspect': 'True', 'log_format': 'default', 'use_colors': 'True', 'debug': 'False', 'no_print': 'None', 'partial_parse': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'printer_width': '80'}
+[0m19:57:57.732536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '89708a87-9a0a-494b-9cbb-51d079879951', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997baeeb90>]}
+[0m19:57:57.781714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '89708a87-9a0a-494b-9cbb-51d079879951', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997e6f00d0>]}
+[0m19:57:57.782415 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:57:57.832402 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:57:57.870169 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:57:57.870547 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:57:57.870988 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m19:57:57.874592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '89708a87-9a0a-494b-9cbb-51d079879951', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997a5bc250>]}
+[0m19:57:57.903980 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:57:57.905213 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:57:57.913248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '89708a87-9a0a-494b-9cbb-51d079879951', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997ad42a50>]}
+[0m19:57:57.913762 [info ] [MainThread]: Found 447 macros
+[0m19:57:57.914082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '89708a87-9a0a-494b-9cbb-51d079879951', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f997a9c4790>]}
+[0m19:57:57.915118 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m19:57:57.916641 [debug] [MainThread]: Command end result
+[0m19:57:57.928090 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:57:57.929346 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:57:57.931883 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m19:57:57.932646 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.36843422, "process_in_blocks": "0", "process_kernel_time": 0.083329, "process_mem_max_rss": "118576", "process_out_blocks": "1712", "process_user_time": 1.283407}
+[0m19:57:57.933041 [debug] [MainThread]: Command `dbt run` succeeded at 19:57:57.932972 after 0.37 seconds
+[0m19:57:57.933354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9980117290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99801b52d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99801b6250>]}
+[0m19:57:57.933672 [debug] [MainThread]: Flushing usage events
+[0m19:57:59.603730 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:58:56.976457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48498a8750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4849b4e790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48498cbf10>]}
+
+
+============================== 19:58:56.978869 | 72eab337-7c09-4039-9690-ac0e838cef6a ==============================
+[0m19:58:56.978869 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:58:56.979373 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'version_check': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt ls --resource-type model', 'fail_fast': 'False', 'printer_width': '80', 'quiet': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'empty': 'None', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'use_colors': 'True', 'introspect': 'True', 'warn_error': 'None', 'debug': 'False', 'log_cache_events': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None'}
+[0m19:58:57.101157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '72eab337-7c09-4039-9690-ac0e838cef6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4849590750>]}
+[0m19:58:57.149556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '72eab337-7c09-4039-9690-ac0e838cef6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f484c4b04d0>]}
+[0m19:58:57.150373 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m19:58:57.200063 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m19:58:57.238625 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:58:57.238991 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:58:57.239439 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m19:58:57.243065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '72eab337-7c09-4039-9690-ac0e838cef6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4848518310>]}
+[0m19:58:57.272461 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m19:58:57.273715 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m19:58:57.280770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '72eab337-7c09-4039-9690-ac0e838cef6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f48489f8f50>]}
+[0m19:58:57.281250 [info ] [MainThread]: Found 447 macros
+[0m19:58:57.281552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72eab337-7c09-4039-9690-ac0e838cef6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4849894310>]}
+[0m19:58:57.282068 [warn ] [MainThread]: No nodes selected!
+[0m19:58:57.282802 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": true, "command_wall_clock_time": 0.34884545, "process_in_blocks": "24", "process_kernel_time": 0.053085, "process_mem_max_rss": "118132", "process_out_blocks": "872", "process_user_time": 1.29681}
+[0m19:58:57.283237 [debug] [MainThread]: Command `dbt ls` succeeded at 19:58:57.283132 after 0.35 seconds
+[0m19:58:57.283576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f484de17390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f484a71f590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f484ccda510>]}
+[0m19:58:57.283908 [debug] [MainThread]: Flushing usage events
+[0m19:58:58.963448 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:16:05.526811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f502b54bd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f502e11f590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f502b54bb10>]}
+
+
+============================== 22:16:05.532454 | a0e3e5db-718a-433e-9377-661c839a0de1 ==============================
+[0m22:16:05.532454 [info ] [MainThread]: Running with dbt=1.10.13
+[0m22:16:05.533369 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'warn_error': 'None', 'introspect': 'True', 'version_check': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'no_print': 'None', 'target_path': 'None', 'profiles_dir': '/home/anryenyn/.dbt', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'cache_selected_only': 'False', 'quiet': 'False', 'use_colors': 'True', 'empty': 'False', 'write_json': 'True', 'partial_parse': 'True', 'debug': 'False', 'static_parser': 'True'}
+[0m22:16:05.534234 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:16:05.535534 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.082291536, "process_in_blocks": "0", "process_kernel_time": 0.135841, "process_mem_max_rss": "105632", "process_out_blocks": "16", "process_user_time": 1.799027}
+[0m22:16:05.536260 [debug] [MainThread]: Command `dbt run` failed at 22:16:05.536117 after 0.08 seconds
+[0m22:16:05.536847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f502b4e2250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f502b4e2cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f502fbb5d10>]}
+[0m22:16:05.537482 [debug] [MainThread]: Flushing usage events
+[0m22:16:07.054725 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:50:36.207842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad1cdb7f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad1ce13b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad1ce134d0>]}
+
+
+============================== 22:50:36.212968 | 01b8c7b8-ceed-44cf-a55e-27a56879ea9f ==============================
+[0m22:50:36.212968 [info ] [MainThread]: Running with dbt=1.10.13
+[0m22:50:36.214112 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'no_print': 'None', 'profiles_dir': '/home/anryenyn/.dbt', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'write_json': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'quiet': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'debug': 'False', 'target_path': 'None', 'log_path': 'logs', 'empty': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True'}
+[0m22:50:36.215089 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:50:36.216510 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.08528265, "process_in_blocks": "0", "process_kernel_time": 0.165869, "process_mem_max_rss": "105700", "process_out_blocks": "8", "process_user_time": 1.754888}
+[0m22:50:36.217337 [debug] [MainThread]: Command `dbt run` failed at 22:50:36.217187 after 0.09 seconds
+[0m22:50:36.217984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad1ce13110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad1ce139d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fad213b5b50>]}
+[0m22:50:36.218617 [debug] [MainThread]: Flushing usage events
+[0m22:50:37.621746 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:51:09.777978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f12dc110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f146e790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f12dc590>]}
+
+
+============================== 22:51:09.785216 | 6b2de7c6-609f-451c-870a-a1b78df12116 ==============================
+[0m22:51:09.785216 [info ] [MainThread]: Running with dbt=1.10.13
+[0m22:51:09.786682 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'use_colors': 'True', 'empty': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'static_parser': 'True', 'cache_selected_only': 'False', 'printer_width': '80', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_cache_events': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'no_print': 'None', 'write_json': 'True', 'debug': 'False', 'introspect': 'True', 'indirect_selection': 'eager', 'version_check': 'True'}
+[0m22:51:10.002642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b2de7c6-609f-451c-870a-a1b78df12116', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f0eda050>]}
+[0m22:51:10.085641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b2de7c6-609f-451c-870a-a1b78df12116', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f1308150>]}
+[0m22:51:10.086949 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m22:51:10.173409 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m22:51:10.239600 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:51:10.240326 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:51:10.241158 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m22:51:10.247729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b2de7c6-609f-451c-870a-a1b78df12116', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36effde850>]}
+[0m22:51:10.299453 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m22:51:10.301894 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m22:51:10.316042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b2de7c6-609f-451c-870a-a1b78df12116', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f0efd550>]}
+[0m22:51:10.316903 [info ] [MainThread]: Found 447 macros
+[0m22:51:10.317497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b2de7c6-609f-451c-870a-a1b78df12116', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f075a890>]}
+[0m22:51:10.319299 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m22:51:10.321977 [debug] [MainThread]: Command end result
+[0m22:51:10.342424 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m22:51:10.344899 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m22:51:10.349482 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m22:51:10.350872 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.646805, "process_in_blocks": "0", "process_kernel_time": 0.186108, "process_mem_max_rss": "118684", "process_out_blocks": "1720", "process_user_time": 2.245671}
+[0m22:51:10.351565 [debug] [MainThread]: Command `dbt run` succeeded at 22:51:10.351441 after 0.65 seconds
+[0m22:51:10.352138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f5817290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36f21e9b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36eff2fe90>]}
+[0m22:51:10.352721 [debug] [MainThread]: Flushing usage events
+[0m22:51:11.884949 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:56:51.177724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd20fcdfcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd20fe88ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd20fcdf510>]}
+
+
+============================== 22:56:51.183543 | b42e0879-c6fd-4219-a250-59b51be73b58 ==============================
+[0m22:56:51.183543 [info ] [MainThread]: Running with dbt=1.10.13
+[0m22:56:51.184686 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'empty': 'None', 'no_print': 'None', 'quiet': 'False', 'warn_error': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'debug': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'cache_selected_only': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'version_check': 'True', 'introspect': 'True', 'invocation_command': 'dbt init my_dbt_project', 'profiles_dir': '/home/anryenyn/.dbt'}
+[0m22:56:51.199973 [info ] [MainThread]: Setting up your profile.
+[0m22:56:57.312784 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 6.2040715, "process_in_blocks": "48", "process_kernel_time": 0.15418, "process_mem_max_rss": "105988", "process_out_blocks": "8", "process_user_time": 1.710545}
+[0m22:56:57.315018 [debug] [MainThread]: Command `dbt init` succeeded at 22:56:57.314624 after 6.21 seconds
+[0m22:56:57.316102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd21431b310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd20fd15510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd20fd15410>]}
+[0m22:56:57.317265 [debug] [MainThread]: Flushing usage events
+[0m22:56:58.963103 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:51:42.418818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ea97baed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2eab41d3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ea97ab910>]}
+
+
+============================== 23:51:42.423819 | 5d9e1d58-4fca-4daf-983b-a26872a5bc65 ==============================
+[0m23:51:42.423819 [info ] [MainThread]: Running with dbt=1.10.13
+[0m23:51:42.424640 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'debug': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'log_cache_events': 'False', 'printer_width': '80', 'write_json': 'True', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'target_path': 'None', 'log_format': 'default', 'quiet': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'profiles_dir': '/home/anryenyn/.dbt'}
+[0m23:51:42.434920 [info ] [MainThread]: dbt version: 1.10.13
+[0m23:51:42.435699 [info ] [MainThread]: python version: 3.11.9
+[0m23:51:42.436225 [info ] [MainThread]: python path: /home/anryenyn/Desktop/VKU/datawarehouse/.venv/bin/python
+[0m23:51:42.436712 [info ] [MainThread]: os info: Linux-6.12.48-1-MANJARO-x86_64-with-glibc2.42
+[0m23:51:42.512041 [info ] [MainThread]: Using profiles dir at /home/anryenyn/.dbt
+[0m23:51:42.513375 [info ] [MainThread]: Using profiles.yml file at /home/anryenyn/.dbt/profiles.yml
+[0m23:51:42.514170 [info ] [MainThread]: Using dbt_project.yml file at /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+[0m23:51:42.515213 [info ] [MainThread]: adapter type: postgres
+[0m23:51:42.515920 [info ] [MainThread]: adapter version: 1.9.1
+[0m23:51:42.671896 [info ] [MainThread]: Configuration:
+[0m23:51:42.672712 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:51:42.673206 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:51:42.673629 [info ] [MainThread]: Required dependencies:
+[0m23:51:42.674070 [debug] [MainThread]: Executing "git --help"
+[0m23:51:42.677130 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:51:42.677968 [debug] [MainThread]: STDERR: "b''"
+[0m23:51:42.678505 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:51:42.679034 [info ] [MainThread]: Connection:
+[0m23:51:42.679532 [info ] [MainThread]:   host: localhost
+[0m23:51:42.680153 [info ] [MainThread]:   port: 5432
+[0m23:51:42.680665 [info ] [MainThread]:   user: postgres
+[0m23:51:42.681129 [info ] [MainThread]:   database: retail_dw
+[0m23:51:42.681581 [info ] [MainThread]:   schema: public
+[0m23:51:42.682083 [info ] [MainThread]:   connect_timeout: 10
+[0m23:51:42.682524 [info ] [MainThread]:   role: None
+[0m23:51:42.682965 [info ] [MainThread]:   search_path: None
+[0m23:51:42.683505 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:51:42.683963 [info ] [MainThread]:   sslmode: None
+[0m23:51:42.684382 [info ] [MainThread]:   sslcert: None
+[0m23:51:42.684792 [info ] [MainThread]:   sslkey: None
+[0m23:51:42.685204 [info ] [MainThread]:   sslrootcert: None
+[0m23:51:42.685616 [info ] [MainThread]:   application_name: dbt
+[0m23:51:42.686013 [info ] [MainThread]:   retries: 1
+[0m23:51:42.686685 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m23:51:42.801985 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:51:42.827091 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:51:42.827766 [debug] [MainThread]: On debug: select 1 as id
+[0m23:51:42.828218 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:51:42.840776 [debug] [MainThread]: SQL status: SELECT 1 in 0.012 seconds
+[0m23:51:42.842336 [debug] [MainThread]: On debug: Close
+[0m23:51:42.842917 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:51:42.843440 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:51:42.844625 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.4975203, "process_in_blocks": "0", "process_kernel_time": 0.175717, "process_mem_max_rss": "117560", "process_out_blocks": "16", "process_user_time": 2.096326}
+[0m23:51:42.845340 [debug] [MainThread]: Command `dbt debug` succeeded at 23:51:42.845217 after 0.50 seconds
+[0m23:51:42.845825 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:51:42.846324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2eadc172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ea972da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2ea9029010>]}
+[0m23:51:42.846946 [debug] [MainThread]: Flushing usage events
+[0m23:51:44.642178 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:51:51.223374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b834eb550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b835534d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b8440dc10>]}
+
+
+============================== 23:51:51.228099 | 4c33e68b-c9ac-49f7-b74d-2c16e0440513 ==============================
+[0m23:51:51.228099 [info ] [MainThread]: Running with dbt=1.10.13
+[0m23:51:51.228969 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'partial_parse': 'True', 'version_check': 'True', 'printer_width': '80', 'profiles_dir': '/home/anryenyn/.dbt', 'cache_selected_only': 'False', 'fail_fast': 'False', 'no_print': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'write_json': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'use_experimental_parser': 'False', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'warn_error': 'None', 'static_parser': 'True', 'empty': 'False', 'invocation_command': 'dbt run', 'quiet': 'False'}
+[0m23:51:51.466868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4c33e68b-c9ac-49f7-b74d-2c16e0440513', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b831dd950>]}
+[0m23:51:51.548718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4c33e68b-c9ac-49f7-b74d-2c16e0440513', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b86150150>]}
+[0m23:51:51.549913 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m23:51:51.636655 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m23:51:51.704354 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:51:51.705052 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:51:51.705871 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m23:51:51.712445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4c33e68b-c9ac-49f7-b74d-2c16e0440513', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b82e973d0>]}
+[0m23:51:51.764376 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m23:51:51.766885 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m23:51:51.780821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4c33e68b-c9ac-49f7-b74d-2c16e0440513', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b82e49f90>]}
+[0m23:51:51.781642 [info ] [MainThread]: Found 447 macros
+[0m23:51:51.782179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4c33e68b-c9ac-49f7-b74d-2c16e0440513', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b8302f1d0>]}
+[0m23:51:51.783893 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:51:51.786462 [debug] [MainThread]: Command end result
+[0m23:51:51.806467 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m23:51:51.808844 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m23:51:51.813534 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m23:51:51.815035 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.663554, "process_in_blocks": "0", "process_kernel_time": 0.165584, "process_mem_max_rss": "115880", "process_out_blocks": "1720", "process_user_time": 2.316384}
+[0m23:51:51.815774 [debug] [MainThread]: Command `dbt run` succeeded at 23:51:51.815647 after 0.66 seconds
+[0m23:51:51.816373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b83521d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b87b172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0b848a4a50>]}
+[0m23:51:51.817024 [debug] [MainThread]: Flushing usage events
+[0m23:51:53.362513 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:58:36.493655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b75414d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b75414f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b7540b250>]}
+
+
+============================== 23:58:36.498281 | db61248c-6d55-4a30-866d-163694af368c ==============================
+[0m23:58:36.498281 [info ] [MainThread]: Running with dbt=1.10.13
+[0m23:58:36.499150 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'partial_parse': 'True', 'version_check': 'True', 'printer_width': '80', 'use_experimental_parser': 'False', 'no_print': 'None', 'empty': 'False', 'invocation_command': 'dbt run', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'target_path': 'None', 'debug': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'quiet': 'False', 'log_cache_events': 'False'}
+[0m23:58:36.715547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db61248c-6d55-4a30-866d-163694af368c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b751033d0>]}
+[0m23:58:36.801275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db61248c-6d55-4a30-866d-163694af368c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b78084350>]}
+[0m23:58:36.802583 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m23:58:36.889429 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m23:58:36.955900 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:58:36.956593 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:58:36.957386 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m23:58:36.963937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'db61248c-6d55-4a30-866d-163694af368c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b74de00d0>]}
+[0m23:58:37.015248 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m23:58:37.017679 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m23:58:37.031741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'db61248c-6d55-4a30-866d-163694af368c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b750ccf50>]}
+[0m23:58:37.032554 [info ] [MainThread]: Found 447 macros
+[0m23:58:37.033093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db61248c-6d55-4a30-866d-163694af368c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b750e1c90>]}
+[0m23:58:37.034890 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:58:37.037529 [debug] [MainThread]: Command end result
+[0m23:58:37.057559 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m23:58:37.059878 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m23:58:37.064445 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m23:58:37.065937 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.6426395, "process_in_blocks": "0", "process_kernel_time": 0.208717, "process_mem_max_rss": "115920", "process_out_blocks": "1720", "process_user_time": 2.14943}
+[0m23:58:37.066710 [debug] [MainThread]: Command `dbt run` succeeded at 23:58:37.066568 after 0.64 seconds
+[0m23:58:37.067317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b75437a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b79a172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b7540bf50>]}
+[0m23:58:37.067901 [debug] [MainThread]: Flushing usage events
+[0m23:58:38.545080 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:15.775686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01044a8a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0106ace490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01044a8c90>]}
+
+
+============================== 00:02:15.780848 | 29206c8e-63dd-42f5-9d7a-a3fc78e61c6d ==============================
+[0m00:02:15.780848 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:02:15.781670 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'profiles_dir': '/home/anryenyn/.dbt', 'printer_width': '80', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'partial_parse': 'True', 'empty': 'False', 'version_check': 'True', 'debug': 'False', 'introspect': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'write_json': 'True', 'static_parser': 'True'}
+[0m00:02:15.993914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '29206c8e-63dd-42f5-9d7a-a3fc78e61c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f010413bf10>]}
+[0m00:02:16.080326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '29206c8e-63dd-42f5-9d7a-a3fc78e61c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0107082390>]}
+[0m00:02:16.081640 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m00:02:16.169399 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m00:02:16.236399 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:02:16.237115 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:02:16.237891 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.retail_dw_project.staging
+[0m00:02:16.244351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '29206c8e-63dd-42f5-9d7a-a3fc78e61c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0103db05d0>]}
+[0m00:02:16.297148 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:02:16.299602 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:02:16.313883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '29206c8e-63dd-42f5-9d7a-a3fc78e61c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0103f42e10>]}
+[0m00:02:16.314739 [info ] [MainThread]: Found 447 macros
+[0m00:02:16.315360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '29206c8e-63dd-42f5-9d7a-a3fc78e61c6d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0103ef2750>]}
+[0m00:02:16.317156 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:02:16.319803 [debug] [MainThread]: Command end result
+[0m00:02:16.339998 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:02:16.342419 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:02:16.346888 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m00:02:16.348316 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.6479209, "process_in_blocks": "0", "process_kernel_time": 0.165798, "process_mem_max_rss": "115920", "process_out_blocks": "1720", "process_user_time": 2.225167}
+[0m00:02:16.349062 [debug] [MainThread]: Command `dbt run` succeeded at 00:02:16.348929 after 0.65 seconds
+[0m00:02:16.349646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0108a172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f01044fbdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f010531c650>]}
+[0m00:02:16.350275 [debug] [MainThread]: Flushing usage events
+[0m00:02:17.797722 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:43.382003 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a0e14350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a0faf2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a0e14750>]}
+
+
+============================== 00:02:43.387903 | 1aa9758a-93d8-42c5-a31d-4daca20c82ae ==============================
+[0m00:02:43.387903 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:02:43.389045 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error': 'None', 'target_path': 'None', 'cache_selected_only': 'False', 'invocation_command': 'dbt clean', 'profiles_dir': '/home/anryenyn/.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'printer_width': '80', 'no_print': 'None', 'fail_fast': 'False', 'empty': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'debug': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'write_json': 'True'}
+[0m00:02:43.544527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1aa9758a-93d8-42c5-a31d-4daca20c82ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a138dd50>]}
+[0m00:02:43.559228 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.24729775, "process_in_blocks": "16", "process_kernel_time": 0.146188, "process_mem_max_rss": "107792", "process_out_blocks": "16", "process_user_time": 1.85542}
+[0m00:02:43.559998 [debug] [MainThread]: Command `dbt clean` succeeded at 00:02:43.559865 after 0.25 seconds
+[0m00:02:43.560573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a54172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a0c63b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f20a13cc7d0>]}
+[0m00:02:43.561161 [debug] [MainThread]: Flushing usage events
+[0m00:02:45.029169 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:47.256973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3b4024210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3b401b4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3b4024550>]}
+
+
+============================== 00:02:47.261537 | 29b1bfaf-62e4-4362-907e-bb1a97a103fd ==============================
+[0m00:02:47.261537 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:02:47.262370 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'debug': 'False', 'version_check': 'True', 'static_parser': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'profiles_dir': '/home/anryenyn/.dbt', 'fail_fast': 'False', 'printer_width': '80', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'log_cache_events': 'False', 'use_colors': 'True', 'partial_parse': 'True'}
+[0m00:02:47.527468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '29b1bfaf-62e4-4362-907e-bb1a97a103fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3b3f4d1d0>]}
+[0m00:02:47.544537 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:02:47.545763 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:02:47.547150 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.36088452, "process_in_blocks": "224", "process_kernel_time": 0.12228, "process_mem_max_rss": "108040", "process_out_blocks": "8", "process_user_time": 1.932198}
+[0m00:02:47.548178 [debug] [MainThread]: Command `dbt deps` succeeded at 00:02:47.548012 after 0.36 seconds
+[0m00:02:47.548782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3b86172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3b3e73290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3b86b5310>]}
+[0m00:02:47.549385 [debug] [MainThread]: Flushing usage events
+[0m00:02:49.081800 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:02:51.226056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b7412dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b8325b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b7418590>]}
+
+
+============================== 00:02:51.231073 | f0f024a8-92fa-4743-948f-6ff1abc10a95 ==============================
+[0m00:02:51.231073 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:02:51.231916 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'cache_selected_only': 'False', 'invocation_command': 'dbt run --full-refresh', 'introspect': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'profiles_dir': '/home/anryenyn/.dbt', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'version_check': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'write_json': 'True', 'empty': 'False', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'static_parser': 'True'}
+[0m00:02:51.457736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f0f024a8-92fa-4743-948f-6ff1abc10a95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b726fe50>]}
+[0m00:02:51.538315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f0f024a8-92fa-4743-948f-6ff1abc10a95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b6f56690>]}
+[0m00:02:51.539565 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m00:02:51.626242 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m00:02:51.627249 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:02:51.627864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f0f024a8-92fa-4743-948f-6ff1abc10a95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b6e47a50>]}
+[0m00:02:52.461842 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.retail_dw_project.mart
+- models.retail_dw_project.staging
+[0m00:02:52.470449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f0f024a8-92fa-4743-948f-6ff1abc10a95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b7927050>]}
+[0m00:02:52.535606 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:02:52.538927 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:02:52.559298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f0f024a8-92fa-4743-948f-6ff1abc10a95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b6d5b1d0>]}
+[0m00:02:52.560413 [info ] [MainThread]: Found 447 macros
+[0m00:02:52.561386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f0f024a8-92fa-4743-948f-6ff1abc10a95', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b70a64d0>]}
+[0m00:02:52.563820 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:02:52.564973 [debug] [MainThread]: Command end result
+[0m00:02:52.589506 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:02:52.592135 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:02:52.596620 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m00:02:52.597951 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.4424682, "process_in_blocks": "0", "process_kernel_time": 0.159133, "process_mem_max_rss": "115348", "process_out_blocks": "2584", "process_user_time": 2.998706}
+[0m00:02:52.598646 [debug] [MainThread]: Command `dbt run` succeeded at 00:02:52.598517 after 1.44 seconds
+[0m00:02:52.599235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94bba17390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b7275990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f94b8325f90>]}
+[0m00:02:52.599861 [debug] [MainThread]: Flushing usage events
+[0m00:02:53.945797 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:04:42.704054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22643033d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2264302d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22642d39d0>]}
+
+
+============================== 00:04:42.710109 | 3ac279f9-e6b2-4110-a1fc-caecfd48d1de ==============================
+[0m00:04:42.710109 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:04:42.711050 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'use_colors': 'True', 'introspect': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'target_path': 'None', 'write_json': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'profiles_dir': '/home/anryenyn/.dbt', 'quiet': 'False', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt clean', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'debug': 'False', 'warn_error': 'None', 'version_check': 'True'}
+[0m00:04:42.883562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ac279f9-e6b2-4110-a1fc-caecfd48d1de', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22641cf6d0>]}
+[0m00:04:42.897120 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.26545933, "process_in_blocks": "0", "process_kernel_time": 0.142607, "process_mem_max_rss": "107984", "process_out_blocks": "8", "process_user_time": 1.851904}
+[0m00:04:42.897824 [debug] [MainThread]: Command `dbt clean` succeeded at 00:04:42.897699 after 0.27 seconds
+[0m00:04:42.898372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22642a2a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f22688172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2264446ed0>]}
+[0m00:04:42.898962 [debug] [MainThread]: Flushing usage events
+[0m00:04:44.442571 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:04:46.606004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8596fc150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb859896750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb8596fc510>]}
+
+
+============================== 00:04:46.612227 | c08a00a0-fe49-4d77-a171-390b7eca28f1 ==============================
+[0m00:04:46.612227 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:04:46.613570 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'empty': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/anryenyn/.dbt', 'static_parser': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'fail_fast': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt deps', 'no_print': 'None', 'introspect': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'warn_error': 'None', 'use_colors': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'debug': 'False'}
+[0m00:04:46.785680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c08a00a0-fe49-4d77-a171-390b7eca28f1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb859494c90>]}
+[0m00:04:46.799533 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:04:46.800681 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:04:46.801994 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.2680282, "process_in_blocks": "0", "process_kernel_time": 0.142676, "process_mem_max_rss": "107976", "process_out_blocks": "8", "process_user_time": 1.842048}
+[0m00:04:46.802983 [debug] [MainThread]: Command `dbt deps` succeeded at 00:04:46.802822 after 0.27 seconds
+[0m00:04:46.803606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb85dd172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb85ddb5e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb85ddb60d0>]}
+[0m00:04:46.804226 [debug] [MainThread]: Flushing usage events
+[0m00:04:48.219459 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:04:50.323380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e2d04510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e2d57590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e2cf2d10>]}
+
+
+============================== 00:04:50.328672 | 5d04b65a-3bb8-45f5-a809-58e5a5a178cf ==============================
+[0m00:04:50.328672 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:04:50.329589 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'use_colors': 'True', 'quiet': 'False', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'target_path': 'None', 'log_format': 'default', 'log_cache_events': 'False', 'empty': 'False', 'static_parser': 'True', 'profiles_dir': '/home/anryenyn/.dbt', 'printer_width': '80', 'introspect': 'True', 'no_print': 'None', 'invocation_command': 'dbt run --full-refresh', 'debug': 'False'}
+[0m00:04:50.556202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5d04b65a-3bb8-45f5-a809-58e5a5a178cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e2cf29d0>]}
+[0m00:04:50.635358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5d04b65a-3bb8-45f5-a809-58e5a5a178cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e58f6350>]}
+[0m00:04:50.636595 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m00:04:50.721669 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m00:04:50.722673 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:04:50.723350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5d04b65a-3bb8-45f5-a809-58e5a5a178cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e2936790>]}
+[0m00:04:51.552301 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.staging
+- models.mart
+[0m00:04:51.558825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5d04b65a-3bb8-45f5-a809-58e5a5a178cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e31e7690>]}
+[0m00:04:51.606893 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:04:51.611263 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:04:51.628093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5d04b65a-3bb8-45f5-a809-58e5a5a178cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e265efd0>]}
+[0m00:04:51.628932 [info ] [MainThread]: Found 447 macros
+[0m00:04:51.629479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d04b65a-3bb8-45f5-a809-58e5a5a178cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e2992410>]}
+[0m00:04:51.631312 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:04:51.632262 [debug] [MainThread]: Command end result
+[0m00:04:51.651807 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:04:51.654184 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:04:51.658791 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m00:04:51.660378 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.4112829, "process_in_blocks": "0", "process_kernel_time": 0.198878, "process_mem_max_rss": "115292", "process_out_blocks": "2568", "process_user_time": 2.899624}
+[0m00:04:51.661185 [debug] [MainThread]: Command `dbt run` succeeded at 00:04:51.661044 after 1.41 seconds
+[0m00:04:51.661810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e7317390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e25ff810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc7e2cfc090>]}
+[0m00:04:51.662441 [debug] [MainThread]: Flushing usage events
+[0m00:04:53.239974 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:07:11.526168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7975569e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f79755b6790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f79755b67d0>]}
+
+
+============================== 00:07:11.532474 | ce7626a8-f022-4fb2-846c-db117a80aa3f ==============================
+[0m00:07:11.532474 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:07:11.533712 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'warn_error': 'None', 'profiles_dir': '/home/anryenyn/.dbt', 'quiet': 'False', 'invocation_command': 'dbt clean', 'no_print': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'fail_fast': 'False', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'target_path': 'None', 'version_check': 'True', 'write_json': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'log_format': 'default'}
+[0m00:07:11.693196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ce7626a8-f022-4fb2-846c-db117a80aa3f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7975096bd0>]}
+[0m00:07:11.706789 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.25601438, "process_in_blocks": "0", "process_kernel_time": 0.152267, "process_mem_max_rss": "107980", "process_out_blocks": "16", "process_user_time": 1.991939}
+[0m00:07:11.707551 [debug] [MainThread]: Command `dbt clean` succeeded at 00:07:11.707418 after 0.26 seconds
+[0m00:07:11.708130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7977946ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f797534f6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f79799172d0>]}
+[0m00:07:11.708730 [debug] [MainThread]: Flushing usage events
+[0m00:07:13.425707 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:07:15.656163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e0328450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e03477d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e03125d0>]}
+
+
+============================== 00:07:15.660992 | e56c07ad-a6ec-4665-93fd-03bd3e490e52 ==============================
+[0m00:07:15.660992 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:07:15.661839 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'version_check': 'True', 'invocation_command': 'dbt deps', 'indirect_selection': 'eager', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs', 'cache_selected_only': 'False', 'printer_width': '80', 'empty': 'None', 'log_cache_events': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'fail_fast': 'False', 'write_json': 'True', 'quiet': 'False', 'target_path': 'None', 'no_print': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'static_parser': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'partial_parse': 'True'}
+[0m00:07:15.841105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e56c07ad-a6ec-4665-93fd-03bd3e490e52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e00c0e90>]}
+[0m00:07:15.854917 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:07:15.856017 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m00:07:15.857368 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.27132088, "process_in_blocks": "0", "process_kernel_time": 0.155176, "process_mem_max_rss": "107968", "process_out_blocks": "8", "process_user_time": 1.883544}
+[0m00:07:15.858325 [debug] [MainThread]: Command `dbt deps` succeeded at 00:07:15.858163 after 0.27 seconds
+[0m00:07:15.858910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e49172d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e0176e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc8e49b5d90>]}
+[0m00:07:15.859511 [debug] [MainThread]: Flushing usage events
+[0m00:07:17.215399 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:07:19.447371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc282d01550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc282d53290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2853c7210>]}
+
+
+============================== 00:07:19.452020 | e6b29baa-40e5-44f7-b6db-75091a687174 ==============================
+[0m00:07:19.452020 [info ] [MainThread]: Running with dbt=1.10.13
+[0m00:07:19.452808 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'printer_width': '80', 'write_json': 'True', 'profiles_dir': '/home/anryenyn/.dbt', 'fail_fast': 'False', 'introspect': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'static_parser': 'True', 'warn_error': 'None', 'empty': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run --full-refresh', 'version_check': 'True', 'use_colors': 'True', 'log_format': 'default', 'log_path': '/home/anryenyn/Desktop/VKU/datawarehouse/logs'}
+[0m00:07:19.674727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e6b29baa-40e5-44f7-b6db-75091a687174', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc282ceea10>]}
+[0m00:07:19.757984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e6b29baa-40e5-44f7-b6db-75091a687174', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc285975cd0>]}
+[0m00:07:19.759202 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m00:07:19.845180 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m00:07:19.846175 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:07:19.846827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e6b29baa-40e5-44f7-b6db-75091a687174', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc282a1f9d0>]}
+[0m00:07:20.706511 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.retail_dw_project.staging
+- models.retail_dw_project.mart
+[0m00:07:20.712882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e6b29baa-40e5-44f7-b6db-75091a687174', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2832d4d10>]}
+[0m00:07:20.758947 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:07:20.761279 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:07:20.775007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e6b29baa-40e5-44f7-b6db-75091a687174', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc28265eb50>]}
+[0m00:07:20.775821 [info ] [MainThread]: Found 447 macros
+[0m00:07:20.776357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e6b29baa-40e5-44f7-b6db-75091a687174', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc282686490>]}
+[0m00:07:20.780439 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m00:07:20.781458 [debug] [MainThread]: Command end result
+[0m00:07:20.801107 [debug] [MainThread]: Wrote artifact WritableManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/manifest.json
+[0m00:07:20.803248 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/anryenyn/Desktop/VKU/datawarehouse/target/semantic_manifest.json
+[0m00:07:20.808515 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/anryenyn/Desktop/VKU/datawarehouse/target/run_results.json
+[0m00:07:20.810508 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.4332812, "process_in_blocks": "0", "process_kernel_time": 0.172555, "process_mem_max_rss": "115416", "process_out_blocks": "2568", "process_user_time": 3.003856}
+[0m00:07:20.811707 [debug] [MainThread]: Command `dbt run` succeeded at 00:07:20.811488 after 1.43 seconds
+[0m00:07:20.812694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc287317390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc282d5c190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc282839dd0>]}
+[0m00:07:20.813688 [debug] [MainThread]: Flushing usage events
+[0m00:07:22.335069 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:10:14.207711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f765023f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f764d8a7010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f764d62f3d0>]}
+
+
+============================== 01:10:14.211414 | ec182ff5-5f62-4253-a626-e22c1c512ae4 ==============================
+[0m01:10:14.211414 [info ] [MainThread]: Running with dbt=1.10.13
+[0m01:10:14.211880 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'log_cache_events': 'False', 'invocation_command': 'dbt test', 'printer_width': '80', 'fail_fast': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'no_print': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'debug': 'False', 'profiles_dir': '/home/anryenyn/.dbt', 'warn_error': 'None', 'static_parser': 'True', 'empty': 'None', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'write_json': 'True'}
+[0m01:10:14.212324 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:10:14.213037 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.04927214, "process_in_blocks": "0", "process_kernel_time": 0.082863, "process_mem_max_rss": "105520", "process_out_blocks": "8", "process_user_time": 1.017865}
+[0m01:10:14.213510 [debug] [MainThread]: Command `dbt test` failed at 01:10:14.213435 after 0.05 seconds
+[0m01:10:14.213847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f764d65be90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f764d65b4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7651cb5310>]}
+[0m01:10:14.214177 [debug] [MainThread]: Flushing usage events
+[0m01:10:15.713714 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:10:27.267274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3dc9d6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9e47910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9e47710>]}
+
+
+============================== 01:10:27.271903 | 0ff60eee-5fd4-4464-8ee4-4e69e89b19ff ==============================
+[0m01:10:27.271903 [info ] [MainThread]: Running with dbt=1.10.13
+[0m01:10:27.272867 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'cache_selected_only': 'False', 'partial_parse': 'True', 'debug': 'False', 'fail_fast': 'False', 'introspect': 'True', 'invocation_command': 'dbt run', 'profiles_dir': '/home/anryenyn/.dbt', 'quiet': 'False', 'log_cache_events': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'write_json': 'True', 'printer_width': '80', 'no_print': 'None'}
+[0m01:10:27.273767 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/anryenyn/Desktop/VKU/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:10:27.275119 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.049326163, "process_in_blocks": "0", "process_kernel_time": 0.063013, "process_mem_max_rss": "105452", "process_out_blocks": "8", "process_user_time": 0.985718}
+[0m01:10:27.275913 [debug] [MainThread]: Command `dbt run` failed at 01:10:27.275751 after 0.05 seconds
+[0m01:10:27.276622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9e47910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9e47710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc3d9defe90>]}
+[0m01:10:27.277288 [debug] [MainThread]: Flushing usage events
+[0m01:10:28.532428 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:21.908662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e647b140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e52fd100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e53233b0>]}
+
+
+============================== 18:55:21.912298 | 93da78f8-a7aa-4021-b76d-62046c365d4e ==============================
+[0m18:55:21.912298 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:21.912879 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:21.913463 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:21.914409 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05307942, "process_in_blocks": "66560", "process_kernel_time": 0.190334, "process_mem_max_rss": "102680", "process_out_blocks": "16", "process_user_time": 1.250409}
+[0m18:55:21.914898 [debug] [MainThread]: Command `dbt run` failed at 18:55:21.914815 after 0.05 seconds
+[0m18:55:21.915326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e55db260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e52e15b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f75e5074a40>]}
+[0m18:55:21.915811 [debug] [MainThread]: Flushing usage events
+[0m18:55:23.590853 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:25.380772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d97a0aa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d9703dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d91c33b0>]}
+
+
+============================== 18:55:25.385070 | 3b3e7f99-2830-48f7-abdf-c31a606cd078 ==============================
+[0m18:55:25.385070 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:25.385951 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt test', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:25.386720 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:25.388016 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.063633524, "process_in_blocks": "0", "process_kernel_time": 0.157287, "process_mem_max_rss": "102604", "process_out_blocks": "0", "process_user_time": 1.388926}
+[0m18:55:25.388692 [debug] [MainThread]: Command `dbt test` failed at 18:55:25.388573 after 0.06 seconds
+[0m18:55:25.389256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d972a0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d8c84e60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc0d91a9fa0>]}
+[0m18:55:25.389824 [debug] [MainThread]: Flushing usage events
+[0m18:55:26.704133 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:28.559196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7065e80860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7067e20680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f70656733b0>]}
+
+
+============================== 18:55:28.563259 | 8d56f459-5ea1-48c9-8cec-c8abd8cc9862 ==============================
+[0m18:55:28.563259 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:28.564034 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt docs generate', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:28.565044 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:28.566307 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.059243973, "process_in_blocks": "0", "process_kernel_time": 0.166861, "process_mem_max_rss": "102564", "process_out_blocks": "0", "process_user_time": 1.415879}
+[0m18:55:28.566951 [debug] [MainThread]: Command `dbt docs generate` failed at 18:55:28.566850 after 0.06 seconds
+[0m18:55:28.567479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7066217050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7065d4b7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f706531e9c0>]}
+[0m18:55:28.568222 [debug] [MainThread]: Flushing usage events
+[0m18:55:29.902520 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:31.450689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f075265a660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0754756ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0751d84080>]}
+
+
+============================== 18:55:31.453886 | f191d6d4-084e-44be-92a6-6305d1d5b9c6 ==============================
+[0m18:55:31.453886 [info ] [MainThread]: Running with dbt=1.10.0-b2
+[0m18:55:31.454490 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt docs serve', 'version_check': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'target_path': 'None', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'log_path': 'logs', 'profiles_dir': '/home/vnhantyn/.dbt', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'empty': 'None', 'write_json': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default'}
+[0m18:55:31.455092 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vnhantyn/Documents/Projects/VKU/Midterm/datawarehouse/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:55:31.456064 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.052947514, "process_in_blocks": "0", "process_kernel_time": 0.146558, "process_mem_max_rss": "102668", "process_out_blocks": "8", "process_user_time": 1.206934}
+[0m18:55:31.456598 [debug] [MainThread]: Command `dbt docs serve` failed at 18:55:31.456511 after 0.05 seconds
+[0m18:55:31.457133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f07527de660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f07524b1e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f07520c3d10>]}
+[0m18:55:31.457606 [debug] [MainThread]: Flushing usage events
+[0m18:55:32.863014 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  metabase:
+    image: docker.io/metabase/metabase:latest
+    restart: always
+    # ports:
+    #   - "3000:3000"
+    environment:
+      - MB_DB_TYPE=postgres
+      - MB_DB_HOST=localhost
+      - MB_DB_PORT=5432
+      - MB_DB_USER=postgres
+      - MB_DB_PASS=123456
+      - MB_DB_DBNAME=retail_dw
+    network_mode: host # Connects to nix-shell PostgreSQL on localhost:5432
