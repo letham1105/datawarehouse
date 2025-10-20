@@ -5,6 +5,8 @@ let
 	pkgs-unstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-unstable.tar.gz") {};
 
 	python-with-packages = pkgs-unstable.python312.withPackages (ps: [
+		ps.matplotlib
+		ps.seaborn
 		ps.pandas
 		ps.sqlalchemy
 		ps.psycopg2-binary
@@ -25,6 +27,7 @@ in
 			pkgs.lsof
 			pkgs.podman
 			pkgs.podman-compose
+			pkgs.jupyter
 		];
 		shellHook = ''
 		echo "PostgreSQL and Python 3.13 environment ready"
