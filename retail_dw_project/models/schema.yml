@@ -17,41 +17,110 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('dim_customer')
-              field: customer_key
+              arguments:
+                to: ref('dim_customer')
+                field: customer_key
       - name: product_key
         description: "Foreign key đến dim_product"
         tests:
           - not_null
           - relationships:
-              to: ref('dim_product')
-              field: product_key
+              arguments:
+                to: ref('dim_product')
+                field: product_key
       - name: date_id
         description: "Foreign key đến dim_date"
         tests:
           - not_null
           - relationships:
-              to: ref('dim_date')
-              field: date_id
+              arguments:
+                to: ref('dim_date')
+                field: date_id
       - name: quantity
         description: "Số lượng"
         tests:
           - not_null
           - dbt_utils.accepted_range:
-              min_value: 1
+              arguments:
+                min_value: 1
+                inclusive: true
       - name: unit_price
         description: "Đơn giá"
         tests:
           - not_null
           - dbt_utils.accepted_range:
-              min_value: 0
+              arguments:
+                min_value: 0
+                inclusive: true
       - name: line_total
         description: "Tổng tiền dòng"
         tests:
           - not_null
           - dbt_utils.accepted_range:
-              min_value: 0
+              arguments:
+                min_value: 0
       - name: order_datetime
         description: "Ngày giờ đặt hàng"
+        tests:
+          - not_null
+
+  - name: dim_customer
+    description: "Customer dimension với rich attributes"
+    columns:
+      - name: customer_key
+        description: "Surrogate key cho customer"
+        tests:
+          - not_null
+          - unique  # Đây là PRIMARY KEY test
+      - name: customer_id
+        description: "Business key từ source system"
+        tests:
+          - not_null
+      - name: country
+        description: "Quốc gia của khách hàng"
+        tests:
+          - not_null
+      - name: total_revenue
+        description: "Tổng doanh thu"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+      - name: customer_segment
+        description: "Phân khúc khách hàng"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['VIP', 'Premium', 'Regular', 'Basic']
+
+  - name: dim_product  
+    description: "Product dimension với categories"
+    columns:
+      - name: product_key
+        description: "Surrogate key cho product"
+        tests:
+          - not_null
+          - unique  # PRIMARY KEY test
+      - name: stock_code
+        description: "Mã sản phẩm"
+        tests:
+          - not_null
+      - name: category
+        description: "Danh mục sản phẩm"
+        tests:
+          - not_null
+
+  - name: dim_date
+    description: "Date dimension với time hierarchies"
+    columns:
+      - name: date_id
+        description: "Date key YYYYMMDD format"
+        tests:
+          - not_null
+          - unique  # PRIMARY KEY test
+      - name: date
+        description: "Actual date"
         tests:
           - not_null

@@ -20,7 +20,7 @@ with customer_stats as (
 )
 
 select
-    {{ dbt_utils.generate_surrogate_key(['customer_id']) }} as customer_key,
+    {{ dbt_utils.generate_surrogate_key(['customer_id', 'country']) }} as customer_key,
     customer_id,
     country,
     first_order_date,
